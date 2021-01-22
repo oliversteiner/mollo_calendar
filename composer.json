@@ -1,17 +1,17 @@
 {
-    "name": "drupal/mollo_event",
+    "name": "drupal/mollo_calendar",
     "type": "drupal-module",
     "description": "Mollo Event",
     "keywords": [
         "drupal",
         "mollo",
-        "event"
+        "calendar"
     ],
-    "homepage": "https://github.com/oliversteiner/mollo_event",
+    "homepage": "https://github.com/oliversteiner/mollo_calendar",
     "minimum-stability": "dev",
     "support": {
-        "issues": "https://github.com/oliversteiner/mollo_event/issues",
-        "source": "https://github.com/oliversteiner/mollo_event"
+        "issues": "https://github.com/oliversteiner/mollo_calendar/issues",
+        "source": "https://github.com/oliversteiner/mollo_calendar"
     },
     "require": {}
 }

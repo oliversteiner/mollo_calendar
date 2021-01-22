@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\mollo_event\Tests;
+namespace Drupal\mollo_calendar\Tests;
 
 use Drupal\simpletest\WebTestBase;
 
 /**
- * Provides automated tests for the mollo_event module.
+ * Provides automated tests for the mollo_calendar module.
  */
 class PreloadControllerTest extends WebTestBase {
 
@@ -15,8 +15,8 @@ class PreloadControllerTest extends WebTestBase {
    */
   public static function getInfo() {
     return [
-      'name' => "mollo_event PreloadController's controller functionality",
-      'description' => 'Test Unit for module mollo_event and controller PreloadController.',
+      'name' => "mollo_calendar PreloadController's controller functionality",
+      'description' => 'Test Unit for module mollo_calendar and controller PreloadController.',
       'group' => 'Other',
     ];
   }
@@ -29,10 +29,10 @@ class PreloadControllerTest extends WebTestBase {
   }
 
   /**
-   * Tests mollo_event functionality.
+   * Tests mollo_calendar functionality.
    */
   public function testPreloadController() {
-    // Check that the basic functions of module mollo_event.
+    // Check that the basic functions of module mollo_calendar.
     $this->assertEquals(TRUE, TRUE, 'Test Unit Generated via Drupal Console.');
   }
 

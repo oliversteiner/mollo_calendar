@@ -1,0 +1,49 @@
+#
+# Content > Events
+#     (Admin list of all Galleries)
+#
+mollo_calendar.main:
+  title: 'Event'
+  description: 'Show all Events'
+  route_name: mollo_calendar.list
+  parent: 'system.admin_content'
+#
+# Content > Events > List
+#
+mollo_calendar.list:
+  title:  'Events'
+  description: 'Show all Events'
+  route_name: mollo_calendar.list
+  parent: 'mollo_calendar.main'
+#
+# Content > Events > Work
+#
+mollo_calendar.work:
+  title:  'Works'
+  description: 'Show all Events'
+  route_name: mollo_calendar.work.list
+  parent: 'mollo_calendar.main'
+#
+# Content > Events > Location
+#
+mollo_calendar.locations:
+  title:  'Location'
+  description: 'Show all Locations'
+  route_name: mollo_calendar.location.list
+  parent: 'mollo_calendar.main'
+#
+# Content > Events > Dates
+#
+mollo_calendar.dates:
+  title:  'Dates'
+  description: 'Show all Dates'
+  route_name: mollo_calendar.date.list
+  parent: 'mollo_calendar.main'
+#
+# Content > Events > Dates
+#
+mollo_calendar.leadership:
+  title:  'Leadership'
+  description: 'Show Leaderships from Events'
+  route_name: mollo_calendar.leadership.list
+  parent: 'mollo_calendar.main'

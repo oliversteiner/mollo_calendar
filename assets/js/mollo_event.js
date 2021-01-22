@@ -3,8 +3,8 @@
     attach(context, settings) {
       console.log("Mollo Artist");
 
-        $('#mollo-event', context)
-          .once('mollo-event')
+        $('#mollo-calendar', context)
+          .once('mollo-calendar')
           .each(() => {});
 
     },

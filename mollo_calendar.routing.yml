@@ -1,0 +1,54 @@
+#
+# View Events
+#
+mollo_calendar.list:
+  path: '/admin/calendar/list'
+  defaults:
+    _title: 'Events'
+  requirements:
+    _permission: 'administer content'
+#
+# View Works
+#
+mollo_calendar.work.list:
+  path: '/admin/work/list'
+  defaults:
+    _title: 'Works'
+  requirements:
+    _permission: 'administer content'
+#
+# View Locations
+#
+mollo_calendar.location.list:
+  path: '/admin/location/list'
+  defaults:
+    _title: 'Locations'
+  requirements:
+    _permission: 'administer content'
+#
+# View Dates
+#
+mollo_calendar.date.list:
+  path: '/admin/calendar-date/list'
+  defaults:
+    _title: 'Dates'
+  requirements:
+    _permission: 'administer content'
+#
+# View Dates
+#
+mollo_calendar.leadership.list:
+  path: '/admin/leadership/list'
+  defaults:
+    _title: 'Leaderships'
+  requirements:
+    _permission: 'administer content'
+
+
+mollo_calendar.preload_controller_getVars:
+  path: '/mollo_calendar/getVars'
+  defaults:
+    _controller: '\Drupal\mollo_calendar\Controller\PreloadController::getVars'
+    _title: 'getVars'
+  requirements:
+    _permission: 'access content'

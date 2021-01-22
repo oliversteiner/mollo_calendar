@@ -30,14 +30,14 @@ mollo_social_media
 mollo_booking_link
 
 ### Bundle Event Date
-mollo_event (ref->event)
+mollo_calendar (ref->calendar)
 mollo_start (date)
 mollo_end (date)
 mollo_door_opening (date)
 mollo_show_start (bool)
 mollo_show_end (bool)
-mollo_event_status (term)
-mollo_event_number
+mollo_calendar_status (term)
+mollo_calendar_number
 mollo_description
 mollo_notes
 mollo_director (ref->Artist)
@@ -54,8 +54,8 @@ mollo_country
 mollo_map
 
 ### Vocabularies
-mollo_event_category
-mollo_event_status
+mollo_calendar_category
+mollo_calendar_status
 
 ### Bundle Work
 mollo_name
@@ -64,6 +64,6 @@ mollo_writers
 
 
 ### Bundle Event Leadership
-- event  (ref->Event)
+- calendar  (ref->Event)
 - position (term)
 - artist (ref->Artist)

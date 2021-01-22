@@ -1,0 +1,9 @@
+mollo_calendar.main:
+  css:
+    theme:
+      assets/css/mollo_calendar.css: {}
+  js:
+    assets/js/mollo_calendar.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

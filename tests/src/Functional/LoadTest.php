@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\mollo_event\Functional;
+namespace Drupal\Tests\mollo_calendar\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group mollo_event
+ * @group mollo_calendar
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['mollo_event'];
+  public static $modules = ['mollo_calendar'];
 
   /**
    * A user with permission to administer site configuration.
