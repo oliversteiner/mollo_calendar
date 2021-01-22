@@ -7,7 +7,7 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\mollo_calendar\Controller\ClientController;
-use Drupal\mollo_calendar\Controller\EventDatesController;
+use Drupal\mollo_calendar\Controller\CalendarDatesController;
 use Drupal\mollo_calendar\Controller\LocationController;
 use Drupal\mollo_calendar\Controller\PreloadController;
 use Drupal\mollo_calendar\Controller\WorkController;
@@ -24,7 +24,7 @@ function mollo_calendar_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.mollo_calendar':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Mollo Event') . '</p>';
+      $output .= '<p>' . t('Mollo Calendar') . '</p>';
       return $output;
 
     default:
@@ -85,16 +85,16 @@ function preprocess_mollo_calendar(&$variables) {
 
 
 
-// Event Number
+// Calendar Number
     $calendar_number = $node->get('field_mollo_number')->getValue();
     $calendar_number = $calendar_number[0]['value'];
 
 
     $vocabularies = PreloadController::getVars();
-    $artists = ClientController::getArtistsFromEvent($calendar_id);
-    $musicians = ClientController::getArtistsFromEvent($calendar_id, TRUE);
+    $artists = ClientController::getArtistsFromCalendar($calendar_id);
+    $musicians = ClientController::getArtistsFromCalendar($calendar_id, TRUE);
 
-    // Event Work
+    // Calendar Work
     $work_id = $node->get('field_mollo_work')->getValue();
     if($work_id){
     $work_id = $work_id[0]['target_id'];
@@ -124,7 +124,7 @@ function preprocess_mollo_calendar(&$variables) {
 
 
     // Dates
-    $variables['calendar_dates'] = EventDatesController::getDatesFromEvent($calendar_id, $vocabularies, $locations);
+    $variables['calendar_dates'] = CalendarDatesController::getDatesFromCalendar($calendar_id, $vocabularies, $locations);
 
   }
 
@@ -133,7 +133,7 @@ function preprocess_mollo_calendar(&$variables) {
 }
 
 
-function buildEvents($calendar_id) {
+function buildCalendars($calendar_id) {
 
   $variables = [];
   $nids_flatten = [];

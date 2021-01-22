@@ -1,10 +1,10 @@
 #
-# View Events
+# View Calendars
 #
 mollo_calendar.list:
   path: '/admin/calendar/list'
   defaults:
-    _title: 'Events'
+    _title: 'Calendars'
   requirements:
     _permission: 'administer content'
 #

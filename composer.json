@@ -1,7 +1,7 @@
 {
     "name": "drupal/mollo_calendar",
     "type": "drupal-module",
-    "description": "Mollo Event",
+    "description": "Mollo Calendar",
     "keywords": [
         "drupal",
         "mollo",

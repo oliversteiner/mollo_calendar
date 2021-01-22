@@ -1,6 +1,6 @@
-name: 'Events'
+name: 'Calendars'
 type: module
-description: 'Mollo Event'
+description: 'Mollo Calendar'
 core_version_requirement: ^8 || ^9
 package: 'Mollo'
 dependencies:
@@ -9,5 +9,7 @@ dependencies:
   - auto_entitylabel
   - pathauto
   - views_admintools
-  - mollo_artist
+  - mollo_client
+  - mollo_location
+  - mollo_utils
   - content_translation

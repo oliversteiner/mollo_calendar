@@ -1,8 +1,8 @@
-# Mollo Event
+# Mollo Calendar
 
 ## Bundles and Fields:
-### Bundle Event
-#### Event
+### Bundle Calendar
+#### Calendar
 mollo_name
 mollo_subtitle
 mollo_description
@@ -29,7 +29,7 @@ mollo_locations (ref)
 mollo_social_media
 mollo_booking_link
 
-### Bundle Event Date
+### Bundle Calendar Date
 mollo_calendar (ref->calendar)
 mollo_start (date)
 mollo_end (date)
@@ -63,7 +63,7 @@ mollo_composers
 mollo_writers
 
 
-### Bundle Event Leadership
-- calendar  (ref->Event)
+### Bundle Calendar Leadership
+- calendar  (ref->Calendar)
 - position (term)
 - artist (ref->Artist)
