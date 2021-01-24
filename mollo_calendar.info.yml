@@ -1,4 +1,4 @@
-name: 'Calendars'
+name: 'Calendar'
 type: module
 description: 'Mollo Calendar'
 core_version_requirement: ^8 || ^9
@@ -13,3 +13,4 @@ dependencies:
   - mollo_location
   - mollo_utils
   - content_translation
+  - media
