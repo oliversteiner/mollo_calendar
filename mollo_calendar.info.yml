@@ -14,3 +14,6 @@ dependencies:
   - mollo_utils
   - content_translation
   - media
+  -
+project: mollo_calendar
+version: 9.x-1.0
